@@ -16,8 +16,6 @@ servers:
   - url: 'https://opnsense.local/api'
 paths:
   '/acmeclient/accounts/get/{uuid}':
-    description: AcmeClient Account
-    summary: Get AcmeClient AcmeClient Account items
     get:
       summary: Returns a AcmeClient Account
       tags:
@@ -32,8 +30,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/AcmeClient.Account'
   '/acmeclient/accounts/set/{uuid}':
-    description: AcmeClient Account
-    summary: Set AcmeClient AcmeClient Account items
     patch:
       summary: Updates a AcmeClient Account
       tags:
@@ -49,8 +45,6 @@ paths:
         '200':
           description: Successful operation
   '/acmeclient/accounts/del/{uuid}':
-    description: AcmeClient Account
-    summary: Remove AcmeClient AcmeClient Account items
     delete:
       summary: Removes a AcmeClient Account
       tags:
@@ -61,8 +55,6 @@ paths:
         '200':
           description: Successful operation
   '/acmeclient/accounts/toggle/{uuid}/{enabled}':
-    description: AcmeClient Account
-    summary: Toggle AcmeClient AcmeClient Account items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -91,8 +83,6 @@ paths:
         '201':
           description: Created
   '/acmeclient/actions/get/{uuid}':
-    description: AcmeClient Action
-    summary: Get AcmeClient AcmeClient Action items
     get:
       summary: Returns a AcmeClient Action
       tags:
@@ -107,8 +97,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/AcmeClient.Action'
   '/acmeclient/actions/set/{uuid}':
-    description: AcmeClient Action
-    summary: Set AcmeClient AcmeClient Action items
     patch:
       summary: Updates a AcmeClient Action
       tags:
@@ -124,8 +112,6 @@ paths:
         '200':
           description: Successful operation
   '/acmeclient/actions/del/{uuid}':
-    description: AcmeClient Action
-    summary: Remove AcmeClient AcmeClient Action items
     delete:
       summary: Removes a AcmeClient Action
       tags:
@@ -136,8 +122,6 @@ paths:
         '200':
           description: Successful operation
   '/acmeclient/actions/toggle/{uuid}/{enabled}':
-    description: AcmeClient Action
-    summary: Toggle AcmeClient AcmeClient Action items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -166,8 +150,6 @@ paths:
         '201':
           description: Created
   '/acmeclient/certificates/get/{uuid}':
-    description: AcmeClient Certificate
-    summary: Get AcmeClient AcmeClient Certificate items
     get:
       summary: Returns a AcmeClient Certificate
       tags:
@@ -182,8 +164,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/AcmeClient.Certificate'
   '/acmeclient/certificates/set/{uuid}':
-    description: AcmeClient Certificate
-    summary: Set AcmeClient AcmeClient Certificate items
     patch:
       summary: Updates a AcmeClient Certificate
       tags:
@@ -199,8 +179,6 @@ paths:
         '200':
           description: Successful operation
   '/acmeclient/certificates/del/{uuid}':
-    description: AcmeClient Certificate
-    summary: Remove AcmeClient AcmeClient Certificate items
     delete:
       summary: Removes a AcmeClient Certificate
       tags:
@@ -211,8 +189,6 @@ paths:
         '200':
           description: Successful operation
   '/acmeclient/certificates/toggle/{uuid}/{enabled}':
-    description: AcmeClient Certificate
-    summary: Toggle AcmeClient AcmeClient Certificate items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -241,8 +217,6 @@ paths:
         '201':
           description: Created
   '/acmeclient/validations/get/{uuid}':
-    description: AcmeClient Validation
-    summary: Get AcmeClient AcmeClient Validation items
     get:
       summary: Returns a AcmeClient Validation
       tags:
@@ -257,8 +231,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/AcmeClient.Validation'
   '/acmeclient/validations/set/{uuid}':
-    description: AcmeClient Validation
-    summary: Set AcmeClient AcmeClient Validation items
     patch:
       summary: Updates a AcmeClient Validation
       tags:
@@ -274,8 +246,6 @@ paths:
         '200':
           description: Successful operation
   '/acmeclient/validations/del/{uuid}':
-    description: AcmeClient Validation
-    summary: Remove AcmeClient AcmeClient Validation items
     delete:
       summary: Removes a AcmeClient Validation
       tags:
@@ -286,8 +256,6 @@ paths:
         '200':
           description: Successful operation
   '/acmeclient/validations/toggle/{uuid}/{enabled}':
-    description: AcmeClient Validation
-    summary: Toggle AcmeClient AcmeClient Validation items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -316,8 +284,6 @@ paths:
         '201':
           description: Created
   '/captiveportal/service/searchtemplates/{uuid}':
-    description: CaptivePortal Template
-    summary: Get CaptivePortal CaptivePortal Template items
     get:
       summary: Returns a CaptivePortal Template
       tags:
@@ -332,8 +298,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/CaptivePortal.Template'
   '/captiveportal/service/settemplate/{uuid}':
-    description: CaptivePortal Template
-    summary: Set CaptivePortal CaptivePortal Template items
     patch:
       summary: Updates a CaptivePortal Template
       tags:
@@ -349,8 +313,6 @@ paths:
         '200':
           description: Successful operation
   '/captiveportal/service/deltemplate/{uuid}':
-    description: CaptivePortal Template
-    summary: Remove CaptivePortal CaptivePortal Template items
     delete:
       summary: Removes a CaptivePortal Template
       tags:
@@ -378,8 +340,6 @@ paths:
         '201':
           description: Created
   '/captiveportal/settings/getzone/{uuid}':
-    description: CaptivePortal Zone
-    summary: Get CaptivePortal CaptivePortal Zone items
     get:
       summary: Returns a CaptivePortal Zone
       tags:
@@ -394,8 +354,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/CaptivePortal.Zone'
   '/captiveportal/settings/setzone/{uuid}':
-    description: CaptivePortal Zone
-    summary: Set CaptivePortal CaptivePortal Zone items
     patch:
       summary: Updates a CaptivePortal Zone
       tags:
@@ -411,8 +369,6 @@ paths:
         '200':
           description: Successful operation
   '/captiveportal/settings/delzone/{uuid}':
-    description: CaptivePortal Zone
-    summary: Remove CaptivePortal CaptivePortal Zone items
     delete:
       summary: Removes a CaptivePortal Zone
       tags:
@@ -423,8 +379,6 @@ paths:
         '200':
           description: Successful operation
   '/captiveportal/settings/togglezone/{uuid}/{enabled}':
-    description: CaptivePortal Zone
-    summary: Toggle CaptivePortal CaptivePortal Zone items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -453,8 +407,6 @@ paths:
         '201':
           description: Created
   '/cron/settings/getjob/{uuid}':
-    description: CronJob
-    summary: Get Cron CronJob items
     get:
       summary: Returns a CronJob
       tags:
@@ -469,8 +421,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Cron.Job'
   '/cron/settings/setjob/{uuid}':
-    description: CronJob
-    summary: Set Cron CronJob items
     patch:
       summary: Updates a CronJob
       tags:
@@ -486,8 +436,6 @@ paths:
         '200':
           description: Successful operation
   '/cron/settings/deljob/{uuid}':
-    description: CronJob
-    summary: Remove Cron CronJob items
     delete:
       summary: Removes a CronJob
       tags:
@@ -498,8 +446,6 @@ paths:
         '200':
           description: Successful operation
   '/cron/settings/togglejob/{uuid}/{enabled}':
-    description: CronJob
-    summary: Toggle Cron CronJob items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -528,8 +474,6 @@ paths:
         '201':
           description: Created
   '/freeradius/client/getclient/{uuid}':
-    description: FreeRadius Client
-    summary: Get FreeRadius FreeRadius Client items
     get:
       summary: Returns a FreeRadius Client
       tags:
@@ -544,8 +488,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/FreeRadius.Client'
   '/freeradius/client/setclient/{uuid}':
-    description: FreeRadius Client
-    summary: Set FreeRadius FreeRadius Client items
     patch:
       summary: Updates a FreeRadius Client
       tags:
@@ -561,8 +503,6 @@ paths:
         '200':
           description: Successful operation
   '/freeradius/client/delclient/{uuid}':
-    description: FreeRadius Client
-    summary: Remove FreeRadius FreeRadius Client items
     delete:
       summary: Removes a FreeRadius Client
       tags:
@@ -573,8 +513,6 @@ paths:
         '200':
           description: Successful operation
   '/freeradius/client/toggleclient/{uuid}':
-    description: FreeRadius Client
-    summary: Toggle FreeRadius FreeRadius Client items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -603,8 +541,6 @@ paths:
         '201':
           description: Created
   '/freeradius/user/getuser/{uuid}':
-    description: FreeRadius User
-    summary: Get FreeRadius FreeRadius User items
     get:
       summary: Returns a FreeRadius User
       tags:
@@ -619,8 +555,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/FreeRadius.User'
   '/freeradius/user/setuser/{uuid}':
-    description: FreeRadius User
-    summary: Set FreeRadius FreeRadius User items
     patch:
       summary: Updates a FreeRadius User
       tags:
@@ -636,8 +570,6 @@ paths:
         '200':
           description: Successful operation
   '/freeradius/user/deluser/{uuid}':
-    description: FreeRadius User
-    summary: Remove FreeRadius FreeRadius User items
     delete:
       summary: Removes a FreeRadius User
       tags:
@@ -648,8 +580,6 @@ paths:
         '200':
           description: Successful operation
   '/freeradius/user/toggleuser/{uuid}':
-    description: FreeRadius User
-    summary: Toggle FreeRadius FreeRadius User items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -678,8 +608,6 @@ paths:
         '201':
           description: Created
   '/ftpproxy/settings/getproxy/{uuid}':
-    description: FTP Proxy
-    summary: Get FtpProxy FTP Proxy items
     get:
       summary: Returns a FTP Proxy
       tags:
@@ -694,8 +622,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/FtpProxy.Proxy'
   '/ftpproxy/settings/setproxy/{uuid}':
-    description: FTP Proxy
-    summary: Set FtpProxy FTP Proxy items
     patch:
       summary: Updates a FTP Proxy
       tags:
@@ -711,8 +637,6 @@ paths:
         '200':
           description: Successful operation
   '/ftpproxy/settings/delproxy/{uuid}':
-    description: FTP Proxy
-    summary: Remove FtpProxy FTP Proxy items
     delete:
       summary: Removes a FTP Proxy
       tags:
@@ -723,8 +647,6 @@ paths:
         '200':
           description: Successful operation
   '/ftpproxy/settings/toggleproxy/{uuid}':
-    description: FTP Proxy
-    summary: Toggle FtpProxy FTP Proxy items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -753,8 +675,6 @@ paths:
         '201':
           description: Created
   '/haproxy/settings/getacl/{uuid}':
-    description: HAProxy Acl
-    summary: Get HAProxy HAProxy Acl items
     get:
       summary: Returns a HAProxy Acl
       tags:
@@ -769,8 +689,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/HAProxy.Acl'
   '/haproxy/settings/setacl/{uuid}':
-    description: HAProxy Acl
-    summary: Set HAProxy HAProxy Acl items
     patch:
       summary: Updates a HAProxy Acl
       tags:
@@ -786,8 +704,6 @@ paths:
         '200':
           description: Successful operation
   '/haproxy/settings/delacl/{uuid}':
-    description: HAProxy Acl
-    summary: Remove HAProxy HAProxy Acl items
     delete:
       summary: Removes a HAProxy Acl
       tags:
@@ -815,8 +731,6 @@ paths:
         '201':
           description: Created
   '/haproxy/settings/getaction/{uuid}':
-    description: HAProxy Action
-    summary: Get HAProxy HAProxy Action items
     get:
       summary: Returns a HAProxy Action
       tags:
@@ -831,8 +745,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/HAProxy.Action'
   '/haproxy/settings/setaction/{uuid}':
-    description: HAProxy Action
-    summary: Set HAProxy HAProxy Action items
     patch:
       summary: Updates a HAProxy Action
       tags:
@@ -848,8 +760,6 @@ paths:
         '200':
           description: Successful operation
   '/haproxy/settings/delaction/{uuid}':
-    description: HAProxy Action
-    summary: Remove HAProxy HAProxy Action items
     delete:
       summary: Removes a HAProxy Action
       tags:
@@ -877,8 +787,6 @@ paths:
         '201':
           description: Created
   '/haproxy/settings/getbackend/{uuid}':
-    description: HAProxy Backend
-    summary: Get HAProxy HAProxy Backend items
     get:
       summary: Returns a HAProxy Backend
       tags:
@@ -893,8 +801,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/HAProxy.Backend'
   '/haproxy/settings/setbackend/{uuid}':
-    description: HAProxy Backend
-    summary: Set HAProxy HAProxy Backend items
     patch:
       summary: Updates a HAProxy Backend
       tags:
@@ -910,8 +816,6 @@ paths:
         '200':
           description: Successful operation
   '/haproxy/settings/delbackend/{uuid}':
-    description: HAProxy Backend
-    summary: Remove HAProxy HAProxy Backend items
     delete:
       summary: Removes a HAProxy Backend
       tags:
@@ -922,8 +826,6 @@ paths:
         '200':
           description: Successful operation
   '/haproxy/settings/togglebackend/{uuid}/{enabled}':
-    description: HAProxy Backend
-    summary: Toggle HAProxy HAProxy Backend items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -952,8 +854,6 @@ paths:
         '201':
           description: Created
   '/haproxy/settings/geterrorfile/{uuid}':
-    description: HAProxy ErrorFile
-    summary: Get HAProxy HAProxy ErrorFile items
     get:
       summary: Returns a HAProxy ErrorFile
       tags:
@@ -968,8 +868,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/HAProxy.ErrorFile'
   '/haproxy/settings/seterrorfile/{uuid}':
-    description: HAProxy ErrorFile
-    summary: Set HAProxy HAProxy ErrorFile items
     patch:
       summary: Updates a HAProxy ErrorFile
       tags:
@@ -985,8 +883,6 @@ paths:
         '200':
           description: Successful operation
   '/haproxy/settings/delerrorfile/{uuid}':
-    description: HAProxy ErrorFile
-    summary: Remove HAProxy HAProxy ErrorFile items
     delete:
       summary: Removes a HAProxy ErrorFile
       tags:
@@ -1014,8 +910,6 @@ paths:
         '201':
           description: Created
   '/haproxy/settings/getfrontend/{uuid}':
-    description: HAProxy Frontend
-    summary: Get HAProxy HAProxy Frontend items
     get:
       summary: Returns a HAProxy Frontend
       tags:
@@ -1030,8 +924,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/HAProxy.Frontend'
   '/haproxy/settings/setfrontend/{uuid}':
-    description: HAProxy Frontend
-    summary: Set HAProxy HAProxy Frontend items
     patch:
       summary: Updates a HAProxy Frontend
       tags:
@@ -1047,8 +939,6 @@ paths:
         '200':
           description: Successful operation
   '/haproxy/settings/delfrontend/{uuid}':
-    description: HAProxy Frontend
-    summary: Remove HAProxy HAProxy Frontend items
     delete:
       summary: Removes a HAProxy Frontend
       tags:
@@ -1059,8 +949,6 @@ paths:
         '200':
           description: Successful operation
   '/haproxy/settings/togglefrontend/{uuid}/{enabled}':
-    description: HAProxy Frontend
-    summary: Toggle HAProxy HAProxy Frontend items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -1089,8 +977,6 @@ paths:
         '201':
           description: Created
   '/haproxy/settings/gethealthcheck/{uuid}':
-    description: HAProxy Healthcheck
-    summary: Get HAProxy HAProxy Healthcheck items
     get:
       summary: Returns a HAProxy Healthcheck
       tags:
@@ -1105,8 +991,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/HAProxy.Healthcheck'
   '/haproxy/settings/sethealthcheck/{uuid}':
-    description: HAProxy Healthcheck
-    summary: Set HAProxy HAProxy Healthcheck items
     patch:
       summary: Updates a HAProxy Healthcheck
       tags:
@@ -1122,8 +1006,6 @@ paths:
         '200':
           description: Successful operation
   '/haproxy/settings/delhealthcheck/{uuid}':
-    description: HAProxy Healthcheck
-    summary: Remove HAProxy HAProxy Healthcheck items
     delete:
       summary: Removes a HAProxy Healthcheck
       tags:
@@ -1151,8 +1033,6 @@ paths:
         '201':
           description: Created
   '/haproxy/settings/getlua/{uuid}':
-    description: HAProxy LuaScript
-    summary: Get HAProxy HAProxy LuaScript items
     get:
       summary: Returns a HAProxy LuaScript
       tags:
@@ -1167,8 +1047,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/HAProxy.LuaScript'
   '/haproxy/settings/setlua/{uuid}':
-    description: HAProxy LuaScript
-    summary: Set HAProxy HAProxy LuaScript items
     patch:
       summary: Updates a HAProxy LuaScript
       tags:
@@ -1184,8 +1062,6 @@ paths:
         '200':
           description: Successful operation
   '/haproxy/settings/dellua/{uuid}':
-    description: HAProxy LuaScript
-    summary: Remove HAProxy HAProxy LuaScript items
     delete:
       summary: Removes a HAProxy LuaScript
       tags:
@@ -1196,8 +1072,6 @@ paths:
         '200':
           description: Successful operation
   '/haproxy/settings/togglelua/{uuid}/{enabled}':
-    description: HAProxy LuaScript
-    summary: Toggle HAProxy HAProxy LuaScript items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -1226,8 +1100,6 @@ paths:
         '201':
           description: Created
   '/haproxy/settings/getserver/{uuid}':
-    description: HAProxy Server
-    summary: Get HAProxy HAProxy Server items
     get:
       summary: Returns a HAProxy Server
       tags:
@@ -1242,8 +1114,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/HAProxy.Server'
   '/haproxy/settings/setserver/{uuid}':
-    description: HAProxy Server
-    summary: Set HAProxy HAProxy Server items
     patch:
       summary: Updates a HAProxy Server
       tags:
@@ -1259,8 +1129,6 @@ paths:
         '200':
           description: Successful operation
   '/haproxy/settings/delserver/{uuid}':
-    description: HAProxy Server
-    summary: Remove HAProxy HAProxy Server items
     delete:
       summary: Removes a HAProxy Server
       tags:
@@ -1288,8 +1156,6 @@ paths:
         '201':
           description: Created
   '/ids/settings/setrule/{uuid}':
-    description: IDS Rule
-    summary: Set IDS IDS Rule items
     patch:
       summary: Updates a IDS Rule
       tags:
@@ -1305,8 +1171,6 @@ paths:
         '200':
           description: Successful operation
   '/ids/settings/togglerule/{uuid}/{enabled}':
-    description: IDS Rule
-    summary: Toggle IDS IDS Rule items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -1318,8 +1182,6 @@ paths:
         '200':
           description: Successful operation
   '/ids/settings/getuserrule/{uuid}':
-    description: IDS UserRule
-    summary: Get IDS IDS UserRule items
     get:
       summary: Returns a IDS UserRule
       tags:
@@ -1334,8 +1196,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/IDS.UserRule'
   '/ids/settings/setuserrule/{uuid}':
-    description: IDS UserRule
-    summary: Set IDS IDS UserRule items
     patch:
       summary: Updates a IDS UserRule
       tags:
@@ -1351,8 +1211,6 @@ paths:
         '200':
           description: Successful operation
   '/ids/settings/deluserrule/{uuid}':
-    description: IDS UserRule
-    summary: Remove IDS IDS UserRule items
     delete:
       summary: Removes a IDS UserRule
       tags:
@@ -1363,8 +1221,6 @@ paths:
         '200':
           description: Successful operation
   '/ids/settings/toggleuserrule/{uuid}/{enabled}':
-    description: IDS UserRule
-    summary: Toggle IDS IDS UserRule items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -1393,8 +1249,6 @@ paths:
         '201':
           description: Created
   '/monit/settings/get/alert/{uuid}':
-    description: Monit Alert
-    summary: Get Monit Monit Alert items
     get:
       summary: Returns a Monit Alert
       tags:
@@ -1409,8 +1263,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Monit.Alert'
   '/monit/settings/set/alert/{uuid}':
-    description: Monit Alert
-    summary: Set Monit Monit Alert items
     patch:
       summary: Updates a Monit Alert
       tags:
@@ -1426,8 +1278,6 @@ paths:
         '200':
           description: Successful operation
   '/monit/settings/del/alert/{uuid}':
-    description: Monit Alert
-    summary: Remove Monit Monit Alert items
     delete:
       summary: Removes a Monit Alert
       tags:
@@ -1438,8 +1288,6 @@ paths:
         '200':
           description: Successful operation
   '/monit/settings/toggle/alert/{uuid}':
-    description: Monit Alert
-    summary: Toggle Monit Monit Alert items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -1468,8 +1316,6 @@ paths:
         '201':
           description: Created
   '/monit/settings/get/service/{uuid}':
-    description: Monit Service
-    summary: Get Monit Monit Service items
     get:
       summary: Returns a Monit Service
       tags:
@@ -1484,8 +1330,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Monit.Service'
   '/monit/settings/set/service/{uuid}':
-    description: Monit Service
-    summary: Set Monit Monit Service items
     patch:
       summary: Updates a Monit Service
       tags:
@@ -1501,8 +1345,6 @@ paths:
         '200':
           description: Successful operation
   '/monit/settings/del/service/{uuid}':
-    description: Monit Service
-    summary: Remove Monit Monit Service items
     delete:
       summary: Removes a Monit Service
       tags:
@@ -1513,8 +1355,6 @@ paths:
         '200':
           description: Successful operation
   '/monit/settings/toggle/service/{uuid}':
-    description: Monit Service
-    summary: Toggle Monit Monit Service items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -1543,8 +1383,6 @@ paths:
         '201':
           description: Created
   '/monit/settings/get/test/{uuid}':
-    description: Monit Test
-    summary: Get Monit Monit Test items
     get:
       summary: Returns a Monit Test
       tags:
@@ -1559,8 +1397,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Monit.Test'
   '/monit/settings/set/test/{uuid}':
-    description: Monit Test
-    summary: Set Monit Monit Test items
     patch:
       summary: Updates a Monit Test
       tags:
@@ -1576,8 +1412,6 @@ paths:
         '200':
           description: Successful operation
   '/monit/settings/del/test/{uuid}':
-    description: Monit Test
-    summary: Remove Monit Monit Test items
     delete:
       summary: Removes a Monit Test
       tags:
@@ -1605,8 +1439,6 @@ paths:
         '201':
           description: Created
   '/postfix/domain/getdomain/{uuid}':
-    description: Postfix Domain
-    summary: Get Postfix Postfix Domain items
     get:
       summary: Returns a Postfix Domain
       tags:
@@ -1621,8 +1453,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Postfix.Domain'
   '/postfix/domain/setdomain/{uuid}':
-    description: Postfix Domain
-    summary: Set Postfix Postfix Domain items
     patch:
       summary: Updates a Postfix Domain
       tags:
@@ -1638,8 +1468,6 @@ paths:
         '200':
           description: Successful operation
   '/postfix/domain/deldomain/{uuid}':
-    description: Postfix Domain
-    summary: Remove Postfix Postfix Domain items
     delete:
       summary: Removes a Postfix Domain
       tags:
@@ -1650,8 +1478,6 @@ paths:
         '200':
           description: Successful operation
   '/postfix/domain/toggledomain/{uuid}':
-    description: Postfix Domain
-    summary: Toggle Postfix Postfix Domain items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -1680,8 +1506,6 @@ paths:
         '201':
           description: Created
   '/postfix/recipient/getrecipient/{uuid}':
-    description: Postfix Recipient
-    summary: Get Postfix Postfix Recipient items
     get:
       summary: Returns a Postfix Recipient
       tags:
@@ -1696,8 +1520,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Postfix.Recipient'
   '/postfix/recipient/setrecipient/{uuid}':
-    description: Postfix Recipient
-    summary: Set Postfix Postfix Recipient items
     patch:
       summary: Updates a Postfix Recipient
       tags:
@@ -1713,8 +1535,6 @@ paths:
         '200':
           description: Successful operation
   '/postfix/recipient/delrecipient/{uuid}':
-    description: Postfix Recipient
-    summary: Remove Postfix Postfix Recipient items
     delete:
       summary: Removes a Postfix Recipient
       tags:
@@ -1725,8 +1545,6 @@ paths:
         '200':
           description: Successful operation
   '/postfix/recipient/togglerecipient/{uuid}':
-    description: Postfix Recipient
-    summary: Toggle Postfix Postfix Recipient items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -1755,8 +1573,6 @@ paths:
         '201':
           description: Created
   '/postfix/sender/getsender/{uuid}':
-    description: Postfix Sender
-    summary: Get Postfix Postfix Sender items
     get:
       summary: Returns a Postfix Sender
       tags:
@@ -1771,8 +1587,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Postfix.Sender'
   '/postfix/sender/setsender/{uuid}':
-    description: Postfix Sender
-    summary: Set Postfix Postfix Sender items
     patch:
       summary: Updates a Postfix Sender
       tags:
@@ -1788,8 +1602,6 @@ paths:
         '200':
           description: Successful operation
   '/postfix/sender/delsender/{uuid}':
-    description: Postfix Sender
-    summary: Remove Postfix Postfix Sender items
     delete:
       summary: Removes a Postfix Sender
       tags:
@@ -1800,8 +1612,6 @@ paths:
         '200':
           description: Successful operation
   '/postfix/sender/togglesender/{uuid}':
-    description: Postfix Sender
-    summary: Toggle Postfix Postfix Sender items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -1830,8 +1640,6 @@ paths:
         '201':
           description: Created
   '/proxy/settings/getremoteblacklist/{uuid}':
-    description: Proxy RemoteBlacklist
-    summary: Get Proxy Proxy RemoteBlacklist items
     get:
       summary: Returns a Proxy RemoteBlacklist
       tags:
@@ -1846,8 +1654,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Proxy.RemoteBlacklist'
   '/proxy/settings/setremoteblacklist/{uuid}':
-    description: Proxy RemoteBlacklist
-    summary: Set Proxy Proxy RemoteBlacklist items
     patch:
       summary: Updates a Proxy RemoteBlacklist
       tags:
@@ -1863,8 +1669,6 @@ paths:
         '200':
           description: Successful operation
   '/proxy/settings/delremoteblacklist/{uuid}':
-    description: Proxy RemoteBlacklist
-    summary: Remove Proxy Proxy RemoteBlacklist items
     delete:
       summary: Removes a Proxy RemoteBlacklist
       tags:
@@ -1875,8 +1679,6 @@ paths:
         '200':
           description: Successful operation
   '/proxy/settings/toggleremoteblacklist/{uuid}':
-    description: Proxy RemoteBlacklist
-    summary: Toggle Proxy Proxy RemoteBlacklist items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -1905,8 +1707,6 @@ paths:
         '201':
           description: Created
   '/proxyuseracl/settings/getacl/{uuid}':
-    description: ProxyUserACL UserACL
-    summary: Get ProxyUserACL ProxyUserACL UserACL items
     get:
       summary: Returns a ProxyUserACL UserACL
       tags:
@@ -1921,8 +1721,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/ProxyUserACL.UserACL'
   '/proxyuseracl/settings/setacl/{uuid}':
-    description: ProxyUserACL UserACL
-    summary: Set ProxyUserACL ProxyUserACL UserACL items
     patch:
       summary: Updates a ProxyUserACL UserACL
       tags:
@@ -1938,8 +1736,6 @@ paths:
         '200':
           description: Successful operation
   '/proxyuseracl/settings/delacl/{uuid}':
-    description: ProxyUserACL UserACL
-    summary: Remove ProxyUserACL ProxyUserACL UserACL items
     delete:
       summary: Removes a ProxyUserACL UserACL
       tags:
@@ -1950,8 +1746,6 @@ paths:
         '200':
           description: Successful operation
   '/proxyuseracl/settings/toggleacl/{uuid}':
-    description: ProxyUserACL UserACL
-    summary: Toggle ProxyUserACL ProxyUserACL UserACL items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -1980,8 +1774,6 @@ paths:
         '201':
           description: Created
   '/quagga/bgp/getaspath/{uuid}':
-    description: BGP AsPath
-    summary: Get Quagga BGP AsPath items
     get:
       summary: Returns a BGP AsPath
       tags:
@@ -1996,8 +1788,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Quagga.BGPAspath'
   '/quagga/bgp/setaspath/{uuid}':
-    description: BGP AsPath
-    summary: Set Quagga BGP AsPath items
     patch:
       summary: Updates a BGP AsPath
       tags:
@@ -2013,8 +1803,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/bgp/delaspath/{uuid}':
-    description: BGP AsPath
-    summary: Remove Quagga BGP AsPath items
     delete:
       summary: Removes a BGP AsPath
       tags:
@@ -2025,8 +1813,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/bgp/toggleaspath/{uuid}':
-    description: BGP AsPath
-    summary: Toggle Quagga BGP AsPath items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -2055,8 +1841,6 @@ paths:
         '201':
           description: Created
   '/quagga/bgp/getneighbor/{uuid}':
-    description: BGP Neighbor
-    summary: Get Quagga BGP Neighbor items
     get:
       summary: Returns a BGP Neighbor
       tags:
@@ -2071,8 +1855,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Quagga.BGPNeighbor'
   '/quagga/bgp/setneighbor/{uuid}':
-    description: BGP Neighbor
-    summary: Set Quagga BGP Neighbor items
     patch:
       summary: Updates a BGP Neighbor
       tags:
@@ -2088,8 +1870,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/bgp/delneighbor/{uuid}':
-    description: BGP Neighbor
-    summary: Remove Quagga BGP Neighbor items
     delete:
       summary: Removes a BGP Neighbor
       tags:
@@ -2100,8 +1880,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/bgp/toggleneighbor/{uuid}':
-    description: BGP Neighbor
-    summary: Toggle Quagga BGP Neighbor items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -2130,8 +1908,6 @@ paths:
         '201':
           description: Created
   '/quagga/bgp/getprefixlist/{uuid}':
-    description: BGP Prefixlist
-    summary: Get Quagga BGP Prefixlist items
     get:
       summary: Returns a BGP Prefixlist
       tags:
@@ -2146,8 +1922,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Quagga.BGPPrefixlist'
   '/quagga/bgp/setprefixlist/{uuid}':
-    description: BGP Prefixlist
-    summary: Set Quagga BGP Prefixlist items
     patch:
       summary: Updates a BGP Prefixlist
       tags:
@@ -2163,8 +1937,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/bgp/delprefixlist/{uuid}':
-    description: BGP Prefixlist
-    summary: Remove Quagga BGP Prefixlist items
     delete:
       summary: Removes a BGP Prefixlist
       tags:
@@ -2175,8 +1947,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/bgp/toggleprefixlist/{uuid}':
-    description: BGP Prefixlist
-    summary: Toggle Quagga BGP Prefixlist items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -2205,8 +1975,6 @@ paths:
         '201':
           description: Created
   '/quagga/bgp/getroutemap/{uuid}':
-    description: BGP Routemap
-    summary: Get Quagga BGP Routemap items
     get:
       summary: Returns a BGP Routemap
       tags:
@@ -2221,8 +1989,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Quagga.BGPRoutemap'
   '/quagga/bgp/setroutemap/{uuid}':
-    description: BGP Routemap
-    summary: Set Quagga BGP Routemap items
     patch:
       summary: Updates a BGP Routemap
       tags:
@@ -2238,8 +2004,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/bgp/delroutemap/{uuid}':
-    description: BGP Routemap
-    summary: Remove Quagga BGP Routemap items
     delete:
       summary: Removes a BGP Routemap
       tags:
@@ -2250,8 +2014,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/bgp/toggleroutemap/{uuid}':
-    description: BGP Routemap
-    summary: Toggle Quagga BGP Routemap items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -2280,8 +2042,6 @@ paths:
         '201':
           description: Created
   '/quagga/ospf6settings/getinterface/{uuid}':
-    description: Ospf6 Interface
-    summary: Get Quagga Ospf6 Interface items
     get:
       summary: Returns a Ospf6 Interface
       tags:
@@ -2296,8 +2056,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Quagga.Ospf6Interface'
   '/quagga/ospf6settings/setinterface/{uuid}':
-    description: Ospf6 Interface
-    summary: Set Quagga Ospf6 Interface items
     patch:
       summary: Updates a Ospf6 Interface
       tags:
@@ -2313,8 +2071,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/ospf6settings/delinterface/{uuid}':
-    description: Ospf6 Interface
-    summary: Remove Quagga Ospf6 Interface items
     delete:
       summary: Removes a Ospf6 Interface
       tags:
@@ -2325,8 +2081,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/ospf6settings/toggleinterface/{uuid}':
-    description: Ospf6 Interface
-    summary: Toggle Quagga Ospf6 Interface items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -2355,8 +2109,6 @@ paths:
         '201':
           description: Created
   '/quagga/ospfsettings/getinterface/{uuid}':
-    description: Ospf Interface
-    summary: Get Quagga Ospf Interface items
     get:
       summary: Returns a Ospf Interface
       tags:
@@ -2371,8 +2123,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Quagga.OspfInterface'
   '/quagga/ospfsettings/setinterface/{uuid}':
-    description: Ospf Interface
-    summary: Set Quagga Ospf Interface items
     patch:
       summary: Updates a Ospf Interface
       tags:
@@ -2388,8 +2138,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/ospfsettings/delinterface/{uuid}':
-    description: Ospf Interface
-    summary: Remove Quagga Ospf Interface items
     delete:
       summary: Removes a Ospf Interface
       tags:
@@ -2400,8 +2148,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/ospfsettings/toggleinterface/{uuid}':
-    description: Ospf Interface
-    summary: Toggle Quagga Ospf Interface items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -2430,8 +2176,6 @@ paths:
         '201':
           description: Created
   '/quagga/ospfsettings/getnetwork/{uuid}':
-    description: Ospf Network
-    summary: Get Quagga Ospf Network items
     get:
       summary: Returns a Ospf Network
       tags:
@@ -2446,8 +2190,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Quagga.OspfNetwork'
   '/quagga/ospfsettings/setnetwork/{uuid}':
-    description: Ospf Network
-    summary: Set Quagga Ospf Network items
     patch:
       summary: Updates a Ospf Network
       tags:
@@ -2463,8 +2205,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/ospfsettings/delnetwork/{uuid}':
-    description: Ospf Network
-    summary: Remove Quagga Ospf Network items
     delete:
       summary: Removes a Ospf Network
       tags:
@@ -2475,8 +2215,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/ospfsettings/togglenetwork/{uuid}':
-    description: Ospf Network
-    summary: Toggle Quagga Ospf Network items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -2505,8 +2243,6 @@ paths:
         '201':
           description: Created
   '/quagga/ospfsettings/getprefixlist/{uuid}':
-    description: Ospf Prefixlist
-    summary: Get Quagga Ospf Prefixlist items
     get:
       summary: Returns a Ospf Prefixlist
       tags:
@@ -2521,8 +2257,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Quagga.OspfPrefixlist'
   '/quagga/ospfsettings/setprefixlist/{uuid}':
-    description: Ospf Prefixlist
-    summary: Set Quagga Ospf Prefixlist items
     patch:
       summary: Updates a Ospf Prefixlist
       tags:
@@ -2538,8 +2272,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/ospfsettings/delprefixlist/{uuid}':
-    description: Ospf Prefixlist
-    summary: Remove Quagga Ospf Prefixlist items
     delete:
       summary: Removes a Ospf Prefixlist
       tags:
@@ -2550,8 +2282,6 @@ paths:
         '200':
           description: Successful operation
   '/quagga/ospfsettings/toggleprefixlist/{uuid}':
-    description: Ospf Prefixlist
-    summary: Toggle Quagga Ospf Prefixlist items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -2580,8 +2310,6 @@ paths:
         '201':
           description: Created
   '/relayd/settings/get/host/{uuid}':
-    description: Relayd Host
-    summary: Get Relayd Relayd Host items
     get:
       summary: Returns a Relayd Host
       tags:
@@ -2596,8 +2324,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Relayd.Host'
   '/relayd/settings/set/host/{uuid}':
-    description: Relayd Host
-    summary: Set Relayd Relayd Host items
     patch:
       summary: Updates a Relayd Host
       tags:
@@ -2613,8 +2339,6 @@ paths:
         '200':
           description: Successful operation
   '/relayd/settings/del/host/{uuid}':
-    description: Relayd Host
-    summary: Remove Relayd Relayd Host items
     delete:
       summary: Removes a Relayd Host
       tags:
@@ -2625,8 +2349,6 @@ paths:
         '200':
           description: Successful operation
   '/relayd/settings/get/protocol/{uuid}':
-    description: Relayd Protocol
-    summary: Get Relayd Relayd Protocol items
     get:
       summary: Returns a Relayd Protocol
       tags:
@@ -2641,8 +2363,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Relayd.Protocol'
   '/relayd/settings/set/protocol/{uuid}':
-    description: Relayd Protocol
-    summary: Set Relayd Relayd Protocol items
     patch:
       summary: Updates a Relayd Protocol
       tags:
@@ -2658,8 +2378,6 @@ paths:
         '200':
           description: Successful operation
   '/relayd/settings/del/protocol/{uuid}':
-    description: Relayd Protocol
-    summary: Remove Relayd Relayd Protocol items
     delete:
       summary: Removes a Relayd Protocol
       tags:
@@ -2670,8 +2388,6 @@ paths:
         '200':
           description: Successful operation
   '/relayd/settings/get/table/{uuid}':
-    description: Relayd Table
-    summary: Get Relayd Relayd Table items
     get:
       summary: Returns a Relayd Table
       tags:
@@ -2686,8 +2402,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Relayd.Table'
   '/relayd/settings/set/table/{uuid}':
-    description: Relayd Table
-    summary: Set Relayd Relayd Table items
     patch:
       summary: Updates a Relayd Table
       tags:
@@ -2703,8 +2417,6 @@ paths:
         '200':
           description: Successful operation
   '/relayd/settings/del/table/{uuid}':
-    description: Relayd Table
-    summary: Remove Relayd Relayd Table items
     delete:
       summary: Removes a Relayd Table
       tags:
@@ -2715,8 +2427,6 @@ paths:
         '200':
           description: Successful operation
   '/relayd/settings/get/tablecheck/{uuid}':
-    description: Relayd TableCheck
-    summary: Get Relayd Relayd TableCheck items
     get:
       summary: Returns a Relayd TableCheck
       tags:
@@ -2731,8 +2441,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Relayd.TableCheck'
   '/relayd/settings/set/tablecheck/{uuid}':
-    description: Relayd TableCheck
-    summary: Set Relayd Relayd TableCheck items
     patch:
       summary: Updates a Relayd TableCheck
       tags:
@@ -2748,8 +2456,6 @@ paths:
         '200':
           description: Successful operation
   '/relayd/settings/del/tablecheck/{uuid}':
-    description: Relayd TableCheck
-    summary: Remove Relayd Relayd TableCheck items
     delete:
       summary: Removes a Relayd TableCheck
       tags:
@@ -2760,8 +2466,6 @@ paths:
         '200':
           description: Successful operation
   '/relayd/settings/get/virtualserver/{uuid}':
-    description: Relayd VirtualServer
-    summary: Get Relayd Relayd VirtualServer items
     get:
       summary: Returns a Relayd VirtualServer
       tags:
@@ -2776,8 +2480,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Relayd.VirtualServer'
   '/relayd/settings/set/virtualserver/{uuid}':
-    description: Relayd VirtualServer
-    summary: Set Relayd Relayd VirtualServer items
     patch:
       summary: Updates a Relayd VirtualServer
       tags:
@@ -2793,8 +2495,6 @@ paths:
         '200':
           description: Successful operation
   '/relayd/settings/del/virtualserver/{uuid}':
-    description: Relayd VirtualServer
-    summary: Remove Relayd Relayd VirtualServer items
     delete:
       summary: Removes a Relayd VirtualServer
       tags:
@@ -2805,8 +2505,6 @@ paths:
         '200':
           description: Successful operation
   '/routes/routes/getroute/{uuid}':
-    description: Routes Route
-    summary: Get Routes Routes Route items
     get:
       summary: Returns a Routes Route
       tags:
@@ -2821,8 +2519,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Routes.Route'
   '/routes/routes/setroute/{uuid}':
-    description: Routes Route
-    summary: Set Routes Routes Route items
     patch:
       summary: Updates a Routes Route
       tags:
@@ -2838,8 +2534,6 @@ paths:
         '200':
           description: Successful operation
   '/routes/routes/delroute/{uuid}':
-    description: Routes Route
-    summary: Remove Routes Routes Route items
     delete:
       summary: Removes a Routes Route
       tags:
@@ -2850,8 +2544,6 @@ paths:
         '200':
           description: Successful operation
   '/routes/routes/toggleroute/{uuid}/{enabled}':
-    description: Routes Route
-    summary: Toggle Routes Routes Route items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -2880,8 +2572,6 @@ paths:
         '201':
           description: Created
   '/siproxd/domain/getdomain/{uuid}':
-    description: Siproxd Domain
-    summary: Get Siproxd Siproxd Domain items
     get:
       summary: Returns a Siproxd Domain
       tags:
@@ -2896,8 +2586,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Siproxd.Domain'
   '/siproxd/domain/setdomain/{uuid}':
-    description: Siproxd Domain
-    summary: Set Siproxd Siproxd Domain items
     patch:
       summary: Updates a Siproxd Domain
       tags:
@@ -2913,8 +2601,6 @@ paths:
         '200':
           description: Successful operation
   '/siproxd/domain/deldomain/{uuid}':
-    description: Siproxd Domain
-    summary: Remove Siproxd Siproxd Domain items
     delete:
       summary: Removes a Siproxd Domain
       tags:
@@ -2925,8 +2611,6 @@ paths:
         '200':
           description: Successful operation
   '/siproxd/domain/toggledomain/{uuid}':
-    description: Siproxd Domain
-    summary: Toggle Siproxd Siproxd Domain items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -2955,8 +2639,6 @@ paths:
         '201':
           description: Created
   '/siproxd/user/getuser/{uuid}':
-    description: Siproxd User
-    summary: Get Siproxd Siproxd User items
     get:
       summary: Returns a Siproxd User
       tags:
@@ -2971,8 +2653,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Siproxd.User'
   '/siproxd/user/setuser/{uuid}':
-    description: Siproxd User
-    summary: Set Siproxd Siproxd User items
     patch:
       summary: Updates a Siproxd User
       tags:
@@ -2988,8 +2668,6 @@ paths:
         '200':
           description: Successful operation
   '/siproxd/user/deluser/{uuid}':
-    description: Siproxd User
-    summary: Remove Siproxd Siproxd User items
     delete:
       summary: Removes a Siproxd User
       tags:
@@ -3000,8 +2678,6 @@ paths:
         '200':
           description: Successful operation
   '/siproxd/user/toggleuser/{uuid}':
-    description: Siproxd User
-    summary: Toggle Siproxd Siproxd User items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -3030,8 +2706,6 @@ paths:
         '201':
           description: Created
   '/tinc/settings/gethost/{uuid}':
-    description: Tinc Host
-    summary: Get Tinc Tinc Host items
     get:
       summary: Returns a Tinc Host
       tags:
@@ -3046,8 +2720,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Tinc.Host'
   '/tinc/settings/sethost/{uuid}':
-    description: Tinc Host
-    summary: Set Tinc Tinc Host items
     patch:
       summary: Updates a Tinc Host
       tags:
@@ -3063,8 +2735,6 @@ paths:
         '200':
           description: Successful operation
   '/tinc/settings/delhost/{uuid}':
-    description: Tinc Host
-    summary: Remove Tinc Tinc Host items
     delete:
       summary: Removes a Tinc Host
       tags:
@@ -3075,8 +2745,6 @@ paths:
         '200':
           description: Successful operation
   '/tinc/settings/togglehost/{uuid}/{enabled}':
-    description: Tinc Host
-    summary: Toggle Tinc Tinc Host items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -3105,8 +2773,6 @@ paths:
         '201':
           description: Created
   '/tinc/settings/getnetwork/{uuid}':
-    description: Tinc Network
-    summary: Get Tinc Tinc Network items
     get:
       summary: Returns a Tinc Network
       tags:
@@ -3121,8 +2787,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Tinc.Network'
   '/tinc/settings/setnetwork/{uuid}':
-    description: Tinc Network
-    summary: Set Tinc Tinc Network items
     patch:
       summary: Updates a Tinc Network
       tags:
@@ -3138,8 +2802,6 @@ paths:
         '200':
           description: Successful operation
   '/tinc/settings/delnetwork/{uuid}':
-    description: Tinc Network
-    summary: Remove Tinc Tinc Network items
     delete:
       summary: Removes a Tinc Network
       tags:
@@ -3150,8 +2812,6 @@ paths:
         '200':
           description: Successful operation
   '/tinc/settings/togglenetwork/{uuid}/{enabled}':
-    description: Tinc Network
-    summary: Toggle Tinc Tinc Network items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -3180,8 +2840,6 @@ paths:
         '201':
           description: Created
   '/tor/exitacl/getacl/{uuid}':
-    description: Tor Exitacl
-    summary: Get Tor Tor Exitacl items
     get:
       summary: Returns a Tor Exitacl
       tags:
@@ -3196,8 +2854,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Tor.Exitacl'
   '/tor/exitacl/setacl/{uuid}':
-    description: Tor Exitacl
-    summary: Set Tor Tor Exitacl items
     patch:
       summary: Updates a Tor Exitacl
       tags:
@@ -3213,8 +2869,6 @@ paths:
         '200':
           description: Successful operation
   '/tor/exitacl/delacl/{uuid}':
-    description: Tor Exitacl
-    summary: Remove Tor Tor Exitacl items
     delete:
       summary: Removes a Tor Exitacl
       tags:
@@ -3225,8 +2879,6 @@ paths:
         '200':
           description: Successful operation
   '/tor/exitacl/toggleacl/{uuid}':
-    description: Tor Exitacl
-    summary: Toggle Tor Tor Exitacl items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -3255,8 +2907,6 @@ paths:
         '201':
           description: Created
   '/tor/hiddenservice/getservice/{uuid}':
-    description: Tor HiddenService
-    summary: Get Tor Tor HiddenService items
     get:
       summary: Returns a Tor HiddenService
       tags:
@@ -3271,8 +2921,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Tor.HiddenService'
   '/tor/hiddenservice/setservice/{uuid}':
-    description: Tor HiddenService
-    summary: Set Tor Tor HiddenService items
     patch:
       summary: Updates a Tor HiddenService
       tags:
@@ -3288,8 +2936,6 @@ paths:
         '200':
           description: Successful operation
   '/tor/hiddenservice/delservice/{uuid}':
-    description: Tor HiddenService
-    summary: Remove Tor Tor HiddenService items
     delete:
       summary: Removes a Tor HiddenService
       tags:
@@ -3300,8 +2946,6 @@ paths:
         '200':
           description: Successful operation
   '/tor/hiddenservice/toggleservice/{uuid}':
-    description: Tor HiddenService
-    summary: Toggle Tor Tor HiddenService items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -3330,8 +2974,6 @@ paths:
         '201':
           description: Created
   '/tor/hiddenserviceacl/getacl/{uuid}':
-    description: Tor HiddenServiceACL
-    summary: Get Tor Tor HiddenServiceACL items
     get:
       summary: Returns a Tor HiddenServiceACL
       tags:
@@ -3346,8 +2988,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Tor.HiddenServiceACL'
   '/tor/hiddenserviceacl/setacl/{uuid}':
-    description: Tor HiddenServiceACL
-    summary: Set Tor Tor HiddenServiceACL items
     patch:
       summary: Updates a Tor HiddenServiceACL
       tags:
@@ -3363,8 +3003,6 @@ paths:
         '200':
           description: Successful operation
   '/tor/hiddenserviceacl/delacl/{uuid}':
-    description: Tor HiddenServiceACL
-    summary: Remove Tor Tor HiddenServiceACL items
     delete:
       summary: Removes a Tor HiddenServiceACL
       tags:
@@ -3375,8 +3013,6 @@ paths:
         '200':
           description: Successful operation
   '/tor/hiddenserviceacl/toggleacl/{uuid}':
-    description: Tor HiddenServiceACL
-    summary: Toggle Tor Tor HiddenServiceACL items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -3405,8 +3041,6 @@ paths:
         '201':
           description: Created
   '/tor/general/gethidservauth/{uuid}':
-    description: Tor HiddenServiceAuth
-    summary: Get Tor Tor HiddenServiceAuth items
     get:
       summary: Returns a Tor HiddenServiceAuth
       tags:
@@ -3421,8 +3055,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Tor.HiddenServiceAuth'
   '/tor/general/sethidservauth/{uuid}':
-    description: Tor HiddenServiceAuth
-    summary: Set Tor Tor HiddenServiceAuth items
     patch:
       summary: Updates a Tor HiddenServiceAuth
       tags:
@@ -3438,8 +3070,6 @@ paths:
         '200':
           description: Successful operation
   '/tor/general/delhidservauth/{uuid}':
-    description: Tor HiddenServiceAuth
-    summary: Remove Tor Tor HiddenServiceAuth items
     delete:
       summary: Removes a Tor HiddenServiceAuth
       tags:
@@ -3450,8 +3080,6 @@ paths:
         '200':
           description: Successful operation
   '/tor/general/togglehidservauth/{uuid}':
-    description: Tor HiddenServiceAuth
-    summary: Toggle Tor Tor HiddenServiceAuth items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -3480,8 +3108,6 @@ paths:
         '201':
           description: Created
   '/tor/socksacl/getacl/{uuid}':
-    description: Tor SocksACL
-    summary: Get Tor Tor SocksACL items
     get:
       summary: Returns a Tor SocksACL
       tags:
@@ -3496,8 +3122,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Tor.SocksACL'
   '/tor/socksacl/setacl/{uuid}':
-    description: Tor SocksACL
-    summary: Set Tor Tor SocksACL items
     patch:
       summary: Updates a Tor SocksACL
       tags:
@@ -3513,8 +3137,6 @@ paths:
         '200':
           description: Successful operation
   '/tor/socksacl/delacl/{uuid}':
-    description: Tor SocksACL
-    summary: Remove Tor Tor SocksACL items
     delete:
       summary: Removes a Tor SocksACL
       tags:
@@ -3525,8 +3147,6 @@ paths:
         '200':
           description: Successful operation
   '/tor/socksacl/toggleacl/{uuid}':
-    description: Tor SocksACL
-    summary: Toggle Tor Tor SocksACL items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -3555,8 +3175,6 @@ paths:
         '201':
           description: Created
   '/trafficshaper/settings/getpipe/{uuid}':
-    description: TrafficShaper Pipe
-    summary: Get TrafficShaper TrafficShaper Pipe items
     get:
       summary: Returns a TrafficShaper Pipe
       tags:
@@ -3571,8 +3189,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/TrafficShaper.Pipe'
   '/trafficshaper/settings/setpipe/{uuid}':
-    description: TrafficShaper Pipe
-    summary: Set TrafficShaper TrafficShaper Pipe items
     patch:
       summary: Updates a TrafficShaper Pipe
       tags:
@@ -3588,8 +3204,6 @@ paths:
         '200':
           description: Successful operation
   '/trafficshaper/settings/delpipe/{uuid}':
-    description: TrafficShaper Pipe
-    summary: Remove TrafficShaper TrafficShaper Pipe items
     delete:
       summary: Removes a TrafficShaper Pipe
       tags:
@@ -3600,8 +3214,6 @@ paths:
         '200':
           description: Successful operation
   '/trafficshaper/settings/togglepipe/{uuid}/{enabled}':
-    description: TrafficShaper Pipe
-    summary: Toggle TrafficShaper TrafficShaper Pipe items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -3630,8 +3242,6 @@ paths:
         '201':
           description: Created
   '/trafficshaper/settings/getqueue/{uuid}':
-    description: TrafficShaper Queue
-    summary: Get TrafficShaper TrafficShaper Queue items
     get:
       summary: Returns a TrafficShaper Queue
       tags:
@@ -3646,8 +3256,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/TrafficShaper.Queue'
   '/trafficshaper/settings/setqueue/{uuid}':
-    description: TrafficShaper Queue
-    summary: Set TrafficShaper TrafficShaper Queue items
     patch:
       summary: Updates a TrafficShaper Queue
       tags:
@@ -3663,8 +3271,6 @@ paths:
         '200':
           description: Successful operation
   '/trafficshaper/settings/delqueue/{uuid}':
-    description: TrafficShaper Queue
-    summary: Remove TrafficShaper TrafficShaper Queue items
     delete:
       summary: Removes a TrafficShaper Queue
       tags:
@@ -3675,8 +3281,6 @@ paths:
         '200':
           description: Successful operation
   '/trafficshaper/settings/togglequeue/{uuid}/{enabled}':
-    description: TrafficShaper Queue
-    summary: Toggle TrafficShaper TrafficShaper Queue items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
@@ -3705,8 +3309,6 @@ paths:
         '201':
           description: Created
   '/trafficshaper/settings/getrule/{uuid}':
-    description: TrafficShaper Rule
-    summary: Get TrafficShaper TrafficShaper Rule items
     get:
       summary: Returns a TrafficShaper Rule
       tags:
@@ -3721,8 +3323,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/TrafficShaper.Rule'
   '/trafficshaper/settings/setrule/{uuid}':
-    description: TrafficShaper Rule
-    summary: Set TrafficShaper TrafficShaper Rule items
     patch:
       summary: Updates a TrafficShaper Rule
       tags:
@@ -3738,8 +3338,6 @@ paths:
         '200':
           description: Successful operation
   '/trafficshaper/settings/delrule/{uuid}':
-    description: TrafficShaper Rule
-    summary: Remove TrafficShaper TrafficShaper Rule items
     delete:
       summary: Removes a TrafficShaper Rule
       tags:
@@ -3767,8 +3365,6 @@ paths:
         '201':
           description: Created
   '/zerotier/network/get/{uuid}':
-    description: ZeroTier Network
-    summary: Get ZeroTier ZeroTier Network items
     get:
       summary: Returns a ZeroTier Network
       tags:
@@ -3783,8 +3379,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/ZeroTier.Network'
   '/zerotier/network/set/{uuid}':
-    description: ZeroTier Network
-    summary: Set ZeroTier ZeroTier Network items
     patch:
       summary: Updates a ZeroTier Network
       tags:
@@ -3800,8 +3394,6 @@ paths:
         '200':
           description: Successful operation
   '/zerotier/network/del/{uuid}':
-    description: ZeroTier Network
-    summary: Remove ZeroTier ZeroTier Network items
     delete:
       summary: Removes a ZeroTier Network
       tags:
@@ -3812,8 +3404,6 @@ paths:
         '200':
           description: Successful operation
   '/zerotier/network/toggle/{uuid}':
-    description: ZeroTier Network
-    summary: Toggle ZeroTier ZeroTier Network items
     parameters:
       - $ref: '#/components/parameters/uuid'
       - $ref: '#/components/parameters/toggle'
